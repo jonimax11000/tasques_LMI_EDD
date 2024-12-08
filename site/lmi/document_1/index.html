@@ -1,0 +1,1228 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../edd/Tema3/Punt5/exercici3/">
+      
+      
+        <link rel="next" href="../document_2/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Característiques dels llenguatges de marques - Documentació de les tasques: Jonathan David Signes Falcó</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../overrides/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#identificar-caracteristiques-dels-llenguatges-de-marques-en-diferents-documents-svg-html-xml" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentació de les tasques: Jonathan David Signes Falcó" class="md-header__button md-logo" aria-label="Documentació de les tasques: Jonathan David Signes Falcó" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentació de les tasques: Jonathan David Signes Falcó
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Característiques dels llenguatges de marques
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentació de les tasques: Jonathan David Signes Falcó" class="md-nav__button md-logo" aria-label="Documentació de les tasques: Jonathan David Signes Falcó" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentació de les tasques: Jonathan David Signes Falcó
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inici
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercicis EDD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Exercicis EDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tema 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tema 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema1/document_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Llenguatges de programació més utilitzats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema1/document_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Com plantejaria el desenvolupament d'una app.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema1/document_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemples de traducció. Les ordres python3, cc, java i javac.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema1/document_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'efecte Bola de neu.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema1/document_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La web d'una empresa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema1/document_6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conflicte d'interesos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tema 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tema 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apartat 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Apartat 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt2/ex1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitat 1. Desenvolupament col·laboratiu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt2/ex2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitat 2. Control de versions i model iteratiu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt2/ex3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apartat 5
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apartat 5
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt5/instalacioGIT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intalació Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt5/treballantRepositoris/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Començant a treballar amb repositoris
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt5/VSCode_GIT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git i Visual Studio Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt5/exercici1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercici 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt5/exercici2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercici 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edd/Tema3/Punt5/exercici3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercici 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Articles LMI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Articles LMI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Característiques dels llenguatges de marques
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identificació dels espais de noms en documents (AndroidManifest.xml).
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+<header class="custom-header">
+    <h1>Benvinguts a la meua documentació</h1>
+</header>
+<nav class="custom-nav">
+    <!-- Navegació personalitzada -->
+</nav>
+<main>
+    
+                  
+
+
+<h1 id="identificar-caracteristiques-dels-llenguatges-de-marques-en-diferents-documents-svg-html-xml">Identificar característiques dels llenguatges de marques en diferents documents (svg, html, xml...)</h1>
+<ul>
+<li>
+<p><strong>Logo.svg:</strong></p>
+<ul>
+<li><strong>Etiquetes:</strong><ul>
+<li><code>&lt;svg&gt;&lt;/svg&gt;</code>: Elemenet principal que definix un àrea de dibuix SVG.</li>
+<li><code>&lt;g&gt;&lt;/g&gt;</code>: Agupació de elements SVG per a l'aplicació de transformacions o estils en conjunt.</li>
+<li><code>&lt;path&gt;&lt;/path&gt;</code>: conjunts de linees, arcs o curves que definixen una forma.</li>
+</ul>
+</li>
+<li><strong>Elements:</strong><ul>
+<li><strong>svg:</strong>: 
+ <code>&lt;svg
+    width="198mm"
+    height="166mm"
+    viewBox="0 0 198 166"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;g transform="matrix(2.2373964,0,0,2.2374086,-1351.9834,-2209.4334)"&gt;
+       &lt;path
+       style="fill:#fb9c08"
+       d="m 647.75482,988.4343 -14.19848,24.169 h 6e-5 l -6.8e-4,17.3938 h -10.21745 l -18.15292,30.901 h -10e-5 l 42.56957,10e-5 z" /&gt;
+       &lt;path
+       style="fill:#653097"
+       d="m 623.33811,1012.6033 v 17.3938 l 10.21823,-17.3938 z" /&gt;
+       &lt;path
+       style="fill:#653097"
+       d="m 663.88003,1012.6033 v 17.3938 h 10.21813 l 18.15101,30.9009 h -42.5676 v -72.4637 z" /&gt;
+       &lt;path
+       style="fill:#fb9c08"
+       d="m 674.0981,1012.6033 v 17.3938 l -10.21825,-17.3938 z" /&gt;
+    &lt;/g&gt;
+ &lt;/svg&gt;</code></li>
+<li><strong>g:</strong><br />
+<code>&lt;g transform="matrix(2.2373964,0,0,2.2374086,-1351.9834,-2209.4334)"&gt;
+ &lt;path
+    style="fill:#fb9c08"
+    d="m 647.75482,988.4343 -14.19848,24.169 h 6e-5 l -6.8e-4,17.3938 h -10.21745 l -18.15292,30.901 h -10e-5 l 42.56957,10e-5 z" /&gt;
+ &lt;path
+    style="fill:#653097"
+    d="m 623.33811,1012.6033 v 17.3938 l 10.21823,-17.3938 z" /&gt;
+ &lt;path
+    style="fill:#653097"
+    d="m 663.88003,1012.6033 v 17.3938 h 10.21813 l 18.15101,30.9009 h -42.5676 v -72.4637 z" /&gt;
+ &lt;path
+    style="fill:#fb9c08"
+    d="m 674.0981,1012.6033 v 17.3938 l -10.21825,-17.3938 z" /&gt;
+ &lt;/g&gt;</code></li>
+<li><strong>path 1:</strong><br />
+<code>&lt;path
+    style="fill:#fb9c08"
+    d="m 647.75482,988.4343 -14.19848,24.169 h 6e-5 l -6.8e-4,17.3938 h -10.21745 l -18.15292,30.901 h -10e-5 l 42.56957,10e-5 z" /&gt;</code></li>
+<li><strong>path 2:</strong><br />
+<code>&lt;path
+    style="fill:#653097"
+    d="m 623.33811,1012.6033 v 17.3938 l 10.21823,-17.3938 z" /&gt;</code></li>
+<li><strong>path 3:</strong><br />
+<code>&lt;path
+  style="fill:#653097"
+  d="m 663.88003,1012.6033 v 17.3938 h 10.21813 l 18.15101,30.9009 h -42.5676 v -72.4637 z" /&gt;</code></li>
+<li><strong>path 4:</strong><br />
+<code>&lt;path
+    style="fill:#fb9c08"
+    d="m 674.0981,1012.6033 v 17.3938 l -10.21825,-17.3938 z" /&gt;</code></li>
+</ul>
+</li>
+<li><strong>Propietats</strong>:<ul>
+<li><code>width</code>: atribut del <code>&lt;svg&gt;&lt;/svg&gt;</code> que definix el ample del llenç en milimetres.</li>
+<li><code>height</code>: atribut del <code>&lt;svg&gt;&lt;/svg&gt;</code> que definix l'altura del llenç en milimetres.</li>
+<li><code>viewbox</code>: atribut del <code>&lt;svg&gt;&lt;/svg&gt;</code> que definix l'àrea de visualització per a establir l'escalabilitat.</li>
+<li><code>version</code>: atribut del <code>&lt;svg&gt;&lt;/svg&gt;</code> que definix la versió del <code>SVG</code>.</li>
+<li><code>xmlns</code>: atribut del <code>&lt;svg&gt;&lt;/svg&gt;</code> que especifica el <code>XML namespace</code> per a <code>SVG</code>.</li>
+<li><code>transform</code>: atribut del <code>&lt;g&gt;&lt;/g&gt;</code> que aplica transformacions (escalat, translació,etc.) als elements dins d'aquest.</li>
+<li><code>style</code>: atribut del <code>&lt;path&gt;&lt;/path&gt;</code> que aplica estils CSS als elements.</li>
+<li><code>d</code>: atribut del <code>&lt;path&gt;&lt;/path&gt;</code> amb els comand i coordenades per a descriure la geometria de la forma del path.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>llenguatges.odt:</strong> on se especifica mirar el document content.xml</p>
+<ul>
+<li><strong>Etiquetes:</strong><ul>
+<li><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>: Declara que el document és un fitxer XML i especifica la versió i la codificació utilitzada.</li>
+<li><code>&lt;office:document-content&gt;</code>: Element arrel que encapsula el contingut del document en format Open Office, que pot incloure text, imatges i estils.</li>
+<li><code>&lt;office:scripts/&gt;</code>: Conté scripts que es poden executar en el context del document, encara que està buit en aquest cas.</li>
+<li><code>&lt;office:font-face-decls&gt;</code>: Declara les fonts utilitzades en el document, especificant les propietats de cada font.</li>
+<li><code>&lt;style:font-face&gt;</code>: Defineix una font específica que es pot utilitzar en el document, incloent propietats com el nom i l'estil de la font.</li>
+<li><code>&lt;office:automatic-styles&gt;</code>: Conté estils automàtics que s'apliquen als elements del document, incloent estils de text i paràgraf.</li>
+<li><code>&lt;style:style&gt;</code>: Defineix un estil particular que es pot aplicar als elements del document, incloent propietats específiques.</li>
+<li><code>&lt;style:paragraph-properties&gt;</code>: Especifica propietats relacionades amb la presentació d'un paràgraf, com l'alineació del text.</li>
+<li><code>&lt;style:text-properties&gt;</code>: Defineix propietats específiques del text, com l'estil de font i el pes del text.</li>
+<li><code>&lt;text:list-style&gt;</code>: Descriu l'estil d'una llista en el document, incloent l'aparença de les viñetes o numeracions.</li>
+<li><code>&lt;text:list-level-style-bullet&gt;</code>: Defineix l'estil de viñetes per a un nivell particular d'una llista, especificant el caràcter de viñeta i el seu format.</li>
+<li><code>&lt;text:list-item&gt;</code>: Representa un ítem dins d'una llista, contenint el contingut de l'element de la llista.</li>
+<li><code>&lt;office:body&gt;</code>: Conté el cos principal del document, que inclou text i altres elements.</li>
+<li><code>&lt;office:text&gt;</code>: Especifica que el contingut dins d'aquest element és text que s'ha de processar i mostrar.</li>
+<li><code>&lt;text:sequence-decls&gt;</code>: Declara les seqüències de text que poden ser utilitzades en el document, com taules o il·lustracions.</li>
+<li><code>&lt;text:sequence-decl&gt;</code>: Defineix una seqüència de text específica, indicant com s'ha de manejar i mostrar</li>
+<li><code>&lt;text:h&gt;</code>: Representa un encapçalament o títol, utilitzat per estructurar el contingut del document.</li>
+<li><code>&lt;text:p&gt;</code>: Indica un paràgraf de text, que pot contenir text i altres elements.</li>
+<li><code>&lt;text:span&gt;</code>: Un contenidor per aplicar estils a un fragment de text dins d'un paràgraf.</li>
+<li><code>&lt;text:list&gt;</code>: Representa una llista que pot contenir diversos ítems, ja siguen enumerats o amb viñetes.</li>
+</ul>
+</li>
+<li><strong>Elements:</strong> Sols he possat alguns dels elements, ja que el document es molt llarg.<ul>
+<li><strong>xml:</strong><br />
+<code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></li>
+<li><strong>text:sequence-decl:</strong><br />
+<code>&lt;text:sequence-decl text:display-outline-level="0" text:name="Illustration"/&gt;</code></li>
+<li><strong>text:h:</strong><br />
+<code>&lt;text:h text:style-name="P1" text:outline-level="1"&gt;Com parlen els ordinadors?&lt;/text:h&gt;</code></li>
+<li><strong>text:p:</strong><br />
+<code>&lt;text:p text:style-name="P5"&gt;Els ordinadors són màquines molt complexes que ens permeten fer moltes coses.&lt;/text:p&gt;</code></li>
+<li><strong>text:list:</strong><br />
+<code>&lt;text:list xml:id="list759559877" text:style-name="L1"&gt;</code></li>
+<li><strong>text:list-item:</strong> 
+ <code>&lt;text:list-item&gt;&lt;text:p text:style-name="P6"&gt;Els &lt;text:span text:style-name="T1"&gt;llenguatges de programació&lt;/text:span&gt;, com Python, Java o C++.&lt;/text:p&gt;&lt;/text:list-item&gt;</code></li>
+</ul>
+</li>
+<li><strong>Propietats:</strong> Com en els elements, sols he possat unes poques.<ul>
+<li><code>xmlns:office</code>: Defineix l'espai de noms per als elements de la especificació OpenDocument, que s'utilitzen en documents d'oficina.</li>
+<li><code>text:style-name</code>: Indica el nom de l'estil aplicat a un element, permetent la consistència en la presentació del contingut.</li>
+<li><code>text:outline-level</code>: Defineix el nivell d'un encapçalament dins de l'estructura del document, ajudant a organitzar el contingut jeràrquicament.</li>
+<li><code>fo:text-indent</code>: Estableix la quantitat d'espai que es deixa al començament d'un paràgraf, afectant l'alineació del text.</li>
+<li><code>xml:id</code>: Proporciona un identificador únic per a un element dins del document, útil per a referències i estils específics.</li>
+<li><code>xmlns:svg</code>: atribut del <code>&lt;g&gt;&lt;/g&gt;</code> que aplica transformacions (escalat, translació,etc.) als elements dins d'aquest.</li>
+<li><code>style</code>: Defineix l'espai de noms per als elements SVG, que permeten la inclusió de gràfics vectorials escalables en el document.</li>
+<li><code>xmlns:xlink</code>: Especifica l'espai de noms per als enllaços en el document, que s'utilitzen per a crear referències a altres recursos o documents.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>llenguatges.docx:</strong> on se especifica mirar el document word/document.xml</p>
+<ul>
+<li><strong>Etiquetes:</strong><ul>
+<li><code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</code>: Declara que el document és un fitxer XML i especifica la versió i la codificació utilitzada.</li>
+<li><code>&lt;w:document&gt;</code>: Element arrel que encapsula el contingut del document en format MS Word.</li>
+<li><code>&lt;w:body&gt;</code>: Representa el cos del document, conté tots els paràgrafs i contingut textual.</li>
+<li><code>&lt;w:p&gt;</code>: Un paràgraf del document.</li>
+<li><code>&lt;w:pPr&gt;</code>: Defineix les propietats del paràgraf on es troba com l'estil i l'alineació.</li>
+<li><code>&lt;w:pStyle&gt;</code>: Estableix l'estil del paràgraf (com a encapçalament, normal, etc.)</li>
+<li><code>&lt;w:bidi&gt;</code>: Indica si el text es mostra en direcció bidireccional (escriptura d’esquerra a dreta o de dreta a esquerra).</li>
+<li><code>&lt;w:spacing&gt;</code>: Estableix l'espaia abans i després d'un paràgraf.</li>
+<li><code>&lt;w:jc&gt;</code>: Defineix la justificació del paràgraf (esquerra, dreta, centrat, o justificat).</li>
+<li><code>&lt;w:r&gt;</code>: Conté un "run", és a dir, un segment de text dins d’un paràgraf.</li>
+<li><code>&lt;w:rPr&gt;</code>: Defineix les propietats d’un "run" de text, com la negreta o la cursiva.</li>
+<li><code>&lt;w:t&gt;</code>: Conté el text dins d’un "run".</li>
+<li><code>&lt;w:b&gt;</code>: Aplica la negreta al text.</li>
+<li><code>&lt;w:bCs&gt;</code>: Aplica estil de negreta específic per a llengües complexes.</li>
+<li><code>&lt;w:i&gt;</code>: Aplica la cursiva al text.</li>
+<li><code>&lt;w:iCs&gt;</code>: Com el <code>&lt;w:bCs</code> pero per a la cursiva.</li>
+<li><code>&lt;w:numPr&gt;</code>: Defineix les propietats per a la numeració i les llistes.</li>
+<li><code>&lt;w:ilvl&gt;</code>: Indica el nivell d’una llista numerada o de vinyetes.</li>
+<li><code>&lt;w:numId&gt;</code>: Identificador de la numeració associada amb un paràgraf.</li>
+<li><code>&lt;w:sectPr&gt;</code>: Estableix el tipus de secció, com "pàgina següent" o "contínua".</li>
+<li><code>&lt;w:type&gt;</code>: Estableix la grandària de la pàgina del document.</li>
+<li><code>&lt;w:pgSz&gt;</code>: Estableix la grandària de la pàgina del document.</li>
+<li><code>&lt;w:pgMar&gt;</code>: Defineix els marges de la pàgina (esquerra, dreta, superior, inferior).</li>
+<li><code>&lt;w:pgNumType&gt;</code>: Defineix el format de la numeració de les pàgines (decimal, romà, etc.).</li>
+<li><code>&lt;w:formProt&gt;</code>: Indica si la protecció del formulari està activada en el document.</li>
+<li><code>&lt;w:textDirection&gt;</code>: <w:textDirection>: Estableix la direcció del text dins del document (esquerra a dreta o viceversa).</li>
+</ul>
+</li>
+<li><strong>Elements:</strong> Sols he possat alguns dels elements, ja que el document es molt llarg.<ul>
+<li><strong>w:t:</strong><br />
+<code>&lt;w:t xml:space="preserve"&gt;Com parlen els ordinadors?&lt;/w:t&gt;</code></li>
+<li><strong>w:pStyle:</strong> 
+ <code>&lt;w:pStyle w:val="Heading1"/&gt;</code></li>
+<li><strong>w:bidi:</strong>
+ <code>&lt;w:bidi w:val="0"/&gt;</code></li>
+<li><strong>w:rPr:</strong>
+ <code>&lt;w:rPr&gt;&lt;/w:rPr&gt;</code></li>
+<li><strong>w:numPr:</strong>
+ <code>&lt;w:numPr&gt;&lt;w:ilvl w:val="0"/&gt;&lt;w:numId w:val="2"/&gt;&lt;/w:numPr&gt;</code></li>
+<li><strong>w:sectPr:</strong>
+ <code>&lt;w:sectPr&gt;&lt;w:type w:val="nextPage"/&gt;&lt;/w:sectPr&gt;</code></li>
+</ul>
+</li>
+<li><strong>Propietats:</strong> Com en els elements, sols he possat unes poques.<ul>
+<li><code>xmlns</code>:  Defineix l'espai de noms per a elements relacionats amb Microsoft Office.</li>
+<li><code>w:val="both"</code>: Aquest atribut es troba dins de l'etiqueta <code>&lt;w:jc&gt;</code> i indica que el text està justificat a ambdós costats.</li>
+<li><code>w</code>: Indica el valor d'un paràmetre o configuració dins d'una etiqueta.</li>
+<li><code>xml</code>: Defineix com gestionar els espais en blanc dins d'un element de text.</li>
+<li><code>mc</code>:  Assenyala quins espais de noms poden ser ignorats per processadors de documents.</li>
+<li><code>w:before="240"</code>: atribut del <code>&lt;g&gt;&lt;/g&gt;</code> que aplica transformacions (escalat, translació,etc.) als elements dins d'aquest.</li>
+<li><code>style</code>: Defineix l'espai de noms per als elements SVG, que permeten la inclusió de gràfics vectorials escalables en el document.</li>
+<li><code>xmlns:xlink</code>: Especifica l'espai de noms per als enllaços en el document, que s'utilitzen per a crear referències a altres recursos o documents.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>MainActivity.xml:</strong></p>
+<ul>
+<li><strong>Etiquetes:</strong><ul>
+<li><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code>: Declara que el document és un fitxer XML i especifica la versió i la codificació utilitzada.</li>
+<li><code>&lt;LinearLayout&gt; &lt;/LinearLayout&gt;</code>:  Contenidor que organitza els elements fills en una disposició lineal (vertical o horitzontal).</li>
+<li><code>&lt;TextView /&gt;</code>: Etiqueta utilitzada per mostrar text a la interfície d'usuari.</li>
+<li><code>&lt;Button /&gt;</code>: Element de la interfície d'usuari que permet als usuaris fer clic per interactuar amb l'aplicació.</li>
+</ul>
+</li>
+<li><strong>Elements:</strong><ul>
+<li><strong>xml:</strong>
+ <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code></li>
+<li><strong>LinearLayou:</strong> 
+ <code>&lt;LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ android:padding="16dp"&gt;</code></li>
+<li><strong>TextView:</strong>
+ <code>&lt;TextView
+android:id="@+id/textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Hola, món!"
+android:textSize="18sp"
+android:layout_marginBottom="16dp"/&gt;</code></li>
+<li><strong>Button:</strong>
+ <code>&lt;Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Prem aquí"/&gt;</code></li>
+</ul>
+</li>
+<li><strong>Propietats:</strong><ul>
+<li><code>version</code>: atribut del <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code> que definix la versió de <em>l'XML</em>.</li>
+<li><code>encoding</code>: atribut del <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code> que definix la codificació dels caracters.</li>
+<li><code>layout_width</code>: controla l'amplaria del elements com el <code>&lt;LinearLayout&gt; &lt;/LinearLayout&gt;</code>, <code>&lt;TextView&gt; &lt;/TextView&gt;</code> o <code>&lt;Button&gt; &lt;/Button&gt;</code>.</li>
+<li><code>layout_height</code>: controla l'altura del elements com el <code>&lt;LinearLayout&gt; &lt;/LinearLayout&gt;</code>, <code>&lt;TextView&gt; &lt;/TextView&gt;</code> o <code>&lt;Button&gt; &lt;/Button&gt;</code>.</li>
+<li><code>orientation</code>: atribut que estableix la direcció en què es disposen els elements fills dins del <code>LinearLayout</code>.</li>
+<li><code>xmlns</code>: Defineix l'espai de noms per a elements relacionats amb sistemes Android.</li>
+<li><code>text</code>: Atribut per definir el text que es mostra en <code>TextView</code> i <code>Button</code></li>
+<li><code>transform</code>: atribut del <code>&lt;g&gt;&lt;/g&gt;</code> que aplica transformacions (escalat, translació,etc.) als elements dins d'aquest.</li>
+<li><code>textSize</code>: Aplica la mida del text dins de <code>TextView</code> en unitats sp (18sp).</li>
+<li><code>layout_marginBottom</code>: Afegeix un marge inferior de 16dp al <code>TextView</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>AndroidManifest.xml:</strong><ul>
+<li><strong>Etiquetes:</strong><ul>
+<li><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code>: Declara que el document és un fitxer XML i especifica la versió i la codificació utilitzada.</li>
+<li><code>&lt;LinearLayout&gt; &lt;/LinearLayout&gt;</code>:  Contenidor que organitza els elements fills en una disposició lineal (vertical o horitzontal).</li>
+<li><code>&lt;TextView /&gt;</code>: Etiqueta utilitzada per mostrar text a la interfície d'usuari.</li>
+<li><code>&lt;Button /&gt;</code>: Element de la interfície d'usuari que permet als usuaris fer clic per interactuar amb l'aplicació.</li>
+</ul>
+</li>
+<li><strong>Elements:</strong><ul>
+<li><strong>xml:</strong>
+ <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code></li>
+<li><strong>LinearLayou:</strong> 
+ <code>&lt;LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ android:padding="16dp"&gt;</code></li>
+<li><strong>TextView:</strong>
+ <code>&lt;TextView
+android:id="@+id/textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Hola, món!"
+android:textSize="18sp"
+android:layout_marginBottom="16dp"/&gt;</code></li>
+<li><strong>Button:</strong>
+ <code>&lt;Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Prem aquí"/&gt;</code></li>
+</ul>
+</li>
+<li><strong>Propietats:</strong><ul>
+<li><code>version</code>: atribut del <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code> que definix la versió de <em>l'XML</em>.</li>
+<li><code>encoding</code>: atribut del <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code> que definix la codificació dels caracters.</li>
+<li><code>layout_width</code>: controla l'amplaria del elements com el <code>&lt;LinearLayout&gt; &lt;/LinearLayout&gt;</code>, <code>&lt;TextView&gt; &lt;/TextView&gt;</code> o <code>&lt;Button&gt; &lt;/Button&gt;</code>.</li>
+<li><code>layout_height</code>: controla l'altura del elements com el <code>&lt;LinearLayout&gt; &lt;/LinearLayout&gt;</code>, <code>&lt;TextView&gt; &lt;/TextView&gt;</code> o <code>&lt;Button&gt; &lt;/Button&gt;</code>.</li>
+<li><code>orientation</code>: atribut que estableix la direcció en què es disposen els elements fills dins del <code>LinearLayout</code>.</li>
+<li><code>xmlns</code>: Defineix l'espai de noms per a elements relacionats amb sistemes Android.</li>
+<li><code>text</code>: Atribut per definir el text que es mostra en <code>TextView</code> i <code>Button</code></li>
+<li><code>transform</code>: atribut del <code>&lt;g&gt;&lt;/g&gt;</code> que aplica transformacions (escalat, translació,etc.) als elements dins d'aquest.</li>
+<li><code>textSize</code>: Aplica la mida del text dins de <code>TextView</code> en unitats sp (18sp).</li>
+<li><code>layout_marginBottom</code>: Afegeix un marge inferior de 16dp al <code>TextView</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+</main>
+<footer class="custom-footer">
+    <p>&copy; 2024 La Meua Documentació</p>
+</footer>
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
