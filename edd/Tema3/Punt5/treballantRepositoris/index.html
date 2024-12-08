@@ -1,0 +1,1858 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../instalacioGIT/">
+      
+      
+        <link rel="next" href="../VSCode_GIT/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Començant a treballar amb repositoris - Documentació de les tasques: Jonathan David Signes Falcó</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../overrides/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comencant-a-treballar-amb-repositoris" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Documentació de les tasques: Jonathan David Signes Falcó" class="md-header__button md-logo" aria-label="Documentació de les tasques: Jonathan David Signes Falcó" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentació de les tasques: Jonathan David Signes Falcó
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Començant a treballar amb repositoris
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Documentació de les tasques: Jonathan David Signes Falcó" class="md-nav__button md-logo" aria-label="Documentació de les tasques: Jonathan David Signes Falcó" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentació de les tasques: Jonathan David Signes Falcó
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inici
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercicis EDD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Exercicis EDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tema 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tema 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tema1/document_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Llenguatges de programació més utilitzats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tema1/document_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Com plantejaria el desenvolupament d'una app.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tema1/document_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemples de traducció. Les ordres python3, cc, java i javac.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tema1/document_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'efecte Bola de neu.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tema1/document_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La web d'una empresa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tema1/document_6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conflicte d'interesos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tema 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tema 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apartat 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Apartat 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Punt2/ex1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitat 1. Desenvolupament col·laboratiu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Punt2/ex2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitat 2. Control de versions i model iteratiu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Punt2/ex3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activitat 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apartat 5
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apartat 5
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instalacioGIT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intalació Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Començant a treballar amb repositoris
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Començant a treballar amb repositoris
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-i-inicialitzacio-de-la-carpeta-del-projecte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació i inicialització de la carpeta del projecte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-de-contingut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació de contingut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fent-el-seguiment-de-larxiu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fent el seguiment de l’arxiu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fent-el-commit-del-fitxer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fent el commit del fitxer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esborrant-archius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esborrant archius
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esborrat-directament-del-repositori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esborrat directament del repositori
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movent-arxius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Movent arxius
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Movent arxius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reanomenat-local-i-extensio-al-repositori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reanomenat local i extensió al repositori
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reanomenat-directe-en-el-repositori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reanomenat directe en el repositori
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desfent-canvis-entre-la-zona-de-preparacio-i-treball" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desfent canvis entre la zona de preparació i treball
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#altres-operacions-dinteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Altres operacions d’interès
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Altres operacions d’interès">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ignorant-fitxers-en-git-el-fitxer-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignorant fitxers en git. El fitxer .gitignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revertir-a-lestat-dun-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revertir a l’estat d’un commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminant-arxius-no-seguits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminant arxius no seguits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercici" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercici">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      git log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captura-de-pantalla-de-git-log-oneline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Captura de pantalla de git log --oneline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VSCode_GIT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git i Visual Studio Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercici1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercici 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercici2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercici 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercici3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercici 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Articles LMI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Articles LMI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lmi/document_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Característiques dels llenguatges de marques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lmi/document_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identificació dels espais de noms en documents (AndroidManifest.xml).
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-i-inicialitzacio-de-la-carpeta-del-projecte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació i inicialització de la carpeta del projecte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-de-contingut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació de contingut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fent-el-seguiment-de-larxiu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fent el seguiment de l’arxiu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fent-el-commit-del-fitxer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fent el commit del fitxer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esborrant-archius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esborrant archius
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esborrat-directament-del-repositori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esborrat directament del repositori
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movent-arxius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Movent arxius
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Movent arxius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reanomenat-local-i-extensio-al-repositori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reanomenat local i extensió al repositori
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reanomenat-directe-en-el-repositori" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reanomenat directe en el repositori
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desfent-canvis-entre-la-zona-de-preparacio-i-treball" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desfent canvis entre la zona de preparació i treball
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#altres-operacions-dinteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Altres operacions d’interès
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Altres operacions d’interès">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ignorant-fitxers-en-git-el-fitxer-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignorant fitxers en git. El fitxer .gitignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revertir-a-lestat-dun-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revertir a l’estat d’un commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminant-arxius-no-seguits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminant arxius no seguits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercici" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercici
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercici">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      git log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captura-de-pantalla-de-git-log-oneline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Captura de pantalla de git log --oneline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+<header class="custom-header">
+    <h1>Benvinguts a la meua documentació</h1>
+</header>
+<nav class="custom-nav">
+    <!-- Navegació personalitzada -->
+</nav>
+<main>
+    
+                  
+
+
+<h1 id="comencant-a-treballar-amb-repositoris">Començant a treballar amb repositoris</h1>
+<p>Ara anem a treballar amb el Git desde el Ubuntu.</p>
+<h2 id="creacio-i-inicialitzacio-de-la-carpeta-del-projecte">Creació i inicialització de la carpeta del projecte</h2>
+<ol>
+<li>
+<p><strong>Creem la carpeta del projecte:</strong></p>
+<p><code>$ mkdir projecte</code></p>
+</li>
+<li>
+<p><strong>En situem dins:</strong></p>
+<p><code>$ cd projecte</code></p>
+</li>
+<li>
+<p><strong>Inicialitzem el repositori en la carpeta:</strong></p>
+<p><code>$ git init</code></p>
+<p><img alt="Iniciamos repositorio GIT" src="../../../../imatges/InicioGit.png" /></p>
+</li>
+<li>
+<p><strong>Vore el estat del repositori:</strong></p>
+</li>
+</ol>
+<p><code>$ git status</code></p>
+<pre><code>    En la rama master
+
+    No hay commits todavía
+
+    no hay nada para confirmar (crea/copia archivos y usa &quot;git add&quot; para hacerles seguimiento)
+</code></pre>
+<h2 id="creacio-de-contingut">Creació de contingut</h2>
+<ol>
+<li>
+<p><strong>Comandament:</strong></p>
+<p><code>$ touch fitxer1.md</code>.</p>
+</li>
+<li>
+<p><strong>Estat:</strong></p>
+</li>
+</ol>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ git status
+    En la rama master
+
+    No hay commits todavía
+
+    Archivos sin seguimiento:
+    (usa &quot;git add &lt;archivo&gt;...&quot; para incluirlo a lo que será confirmado)
+        fitxer1.md
+
+    no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa &quot;git add&quot; para hacerles seguimiento)
+</code></pre>
+<h2 id="fent-el-seguiment-de-larxiu">Fent el seguiment de l’arxiu</h2>
+<ol>
+<li>
+<p><strong>Comandament:</strong> <code>$ git add fitxer1.md</code>.</p>
+</li>
+<li>
+<p><strong>Estado:</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+No hay commits todavía
+Cambios a ser confirmados:
+    (usa "git rm --cached &lt;archivo&gt;..." para sacar del área de stage)
+        nuevos archivos: fitxer1.md
+</code></pre>
+</li>
+</ol>
+<h2 id="fent-el-commit-del-fitxer">Fent el commit del fitxer</h2>
+<ol>
+<li>
+<p><strong>Comandament:</strong> <code>$ git commit -m "Afegint el primer commit"</code>.</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git commit -m "Afegint el primer commit"
+[master (commit-raíz) 03b113b] Afegint el primer commit
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 fitxer1.md
+</code></pre>
+</li>
+<li>
+<p><strong>Estado:</strong></p>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ git status
+    En la rama master
+    nada para hacer commit, el árbol de trabajo está limpio
+</code></pre>
+</li>
+<li>
+<p><strong>Registre de Commits:</strong> <code>$ git log</code></p>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ git log
+    commit 03b113bc8558079752319467be406222bbabd4e0 (HEAD -&gt; master)
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Tue Oct 29 09:43:59 2024 +0100
+
+        Afegint el primer commit
+</code></pre>
+</li>
+<li>
+<p><strong>Registre de Commits en una linea:</strong> <code>$ git log --oneline</code></p>
+<p><img alt="Registre del primer commit" src="../../../../imatges/PrimerCommit.png" /></p>
+</li>
+</ol>
+<h2 id="esborrant-archius">Esborrant archius</h2>
+<p>Per exemplificar això, partirem dels fitxers tmp1.md i tmp2.md creats en <a href="../exercici2/">l'exercici 2</a>.</p>
+<p>En l'exemple esborrarem el fitxer tmp1.md.</p>
+<ol>
+<li>
+<p><strong>Eliminem el filtxer localment, en la zona de treball:</strong></p>
+<p><code>$ rm tmp1.md</code></p>
+<p>Ara observem l'estat:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios no rastreados para el commit:
+(usa "git add/rm &lt;archivo&gt;..." para actualizar a lo que se le va a hacer commit)
+(usa "git restore &lt;archivo&gt;..." para descartar los cambios en el directorio de trabajo)
+    borrados:        tmp1.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+</code></pre>
+</li>
+<li>
+<p><strong>Preparem la següent confirmació:</strong></p>
+<p><code>$ git add tmp1.md</code></p>
+<p>Ara observem l'estat:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios a ser confirmados:
+(usa "git restore --staged &lt;archivo&gt;..." para sacar del área de stage)
+    borrados:        tmp1.md
+</code></pre>
+</li>
+<li>
+<p><strong>Confirmar els canvis:</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git commit -m "Eliminat tmp1.md"
+[master 5e44cc0] Eliminat tmp1.md
+1 file changed, 0 insertions(+), 0 deletions(-)
+delete mode 100644 tmp1.md
+</code></pre>
+<p><img alt="Registre segon commit" src="../../../../imatges/SegonCommit.png" />
+Està la imatge del commit següent perque se me havia olvidat ferla.</p>
+</li>
+</ol>
+<h2 id="esborrat-directament-del-repositori">Esborrat directament del repositori</h2>
+<ol>
+<li>
+<p><strong>Eliminem el fitxer del repositori</strong></p>
+<p><code>$ rm tmp1.md</code></p>
+<p>Ara observem l'estat:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios no rastreados para el commit:
+(usa "git add/rm &lt;archivo&gt;..." para actualizar a lo que se le va a hacer commit)
+(usa "git restore &lt;archivo&gt;..." para descartar los cambios en el directorio de trabajo)
+    borrados:        tmp1.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+</code></pre>
+</li>
+<li>
+<p><strong>Confirmem els canvis:</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git commit -m "Eliminat tmp2.md"
+[master 61d8d06] Eliminat tmp2.md
+1 file changed, 0 insertions(+), 0 deletions(-)
+delete mode 100644 tmp2.md
+</code></pre>
+<p>Ara observem l'estat:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios a ser confirmados:
+(usa "git restore --staged &lt;archivo&gt;..." para sacar del área de stage)
+    borrados:        tmp2.md
+</code></pre>
+<p><img alt="Registre tercer commit" src="../../../../imatges/TercerCommit.png" /></p>
+</li>
+</ol>
+<h2 id="movent-arxius">Movent arxius</h2>
+<h3 id="reanomenat-local-i-extensio-al-repositori">Reanomenat local i extensió al repositori</h3>
+<ol>
+<li>
+<p><strong>Creant i afegint fitxer</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ touch tmp_mv.md
+alumno@alumno-VirtualBox:~/projecte$ git add tmp_mv.md
+alumno@alumno-VirtualBox:~/projecte$ git commit -m "creat tmp.md"
+[master d6a1f47] creat tmp.md
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 tmp_mv.md
+</code></pre>
+</li>
+<li>
+<p><strong>Reanomenat local</strong></p>
+<p><code>alumno@alumno-VirtualBox:~/projecte$ mv tmp_mv.md tmp_mv_1.md</code></p>
+<p>Ara observem l'estat:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios no rastreados para el commit:
+(usa "git add/rm &lt;archivo&gt;..." para actualizar a lo que se le va a hacer commit)
+(usa "git restore &lt;archivo&gt;..." para descartar los cambios en el directorio de trabajo)
+    borrados:        tmp_mv.md
+
+Archivos sin seguimiento:
+(usa "git add &lt;archivo&gt;..." para incluirlo a lo que será confirmado)
+    tmp_mv_1.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+</code></pre>
+</li>
+<li>
+<p><strong>Afegir nous fitxers i canvis al següent commit:</strong></p>
+<ol>
+<li>
+<p>Afegim l'esborrat:</p>
+<p><code>alumno@alumno-VirtualBox:~/projecte$ git add tmp_mv.md</code></p>
+</li>
+<li>
+<p>Afegim el nou fitxer al control de versions:</p>
+<p><code>alumno@alumno-VirtualBox:~/projecte$ git add tmp_mv_1.md</code></p>
+</li>
+<li>
+<p>Estat:</p>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ git status
+    En la rama master
+    Cambios a ser confirmados:
+    (usa "git restore --staged &lt;archivo&gt;..." para sacar del área de stage)
+        renombrados:     tmp_mv.md -&gt; tmp_mv_1.md
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Confirmem els canvis</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git commit -m "Reanomenat tmp_mv.md a tmp_mv_1.md"
+[master f7db25b] Reanomenat tmp_mv.md a tmp_mv_1.md
+1 file changed, 0 insertions(+), 0 deletions(-)
+rename tmp_mv.md =&gt; tmp_mv_1.md (100%)
+</code></pre>
+<p><img alt="Registre Commit de reanomenament" src="../../../../imatges/CommitReanomenat.png" /></p>
+</li>
+</ol>
+<h3 id="reanomenat-directe-en-el-repositori">Reanomenat directe en el repositori</h3>
+<ol>
+<li>
+<p><strong>Creant i afegint fitxer</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ touch tmp_mv.md
+alumno@alumno-VirtualBox:~/projecte$ git add tmp_mv.md
+alumno@alumno-VirtualBox:~/projecte$ git commit -m "Afegit tmp_mv.md per al seu segon reanomenat"
+[master f98f9de] Afegit tmp_mv.md per al seu segon reanomenat
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 tmp_mv.md
+</code></pre>
+</li>
+<li>
+<p><strong>Movem directament el fitxer en el SCV</strong></p>
+<p><code>alumno@alumno-VirtualBox:~/projecte$ git mv tmp_mv.md tmp_mv_2.md</code></p>
+<p>Ara observem l'estat:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios a ser confirmados:
+(usa "git restore --staged &lt;archivo&gt;..." para sacar del área de stage)
+    renombrados:     tmp_mv.md -&gt; tmp_mv_2.md
+</code></pre>
+</li>
+<li>
+<p><strong>Confirmant els canvis:</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git commit -m "Reanomenat tmp_mv.md a tmp_mv_2.md"
+[master 701a924] Reanomenat tmp_mv.md a tmp_mv_2.md
+1 file changed, 0 insertions(+), 0 deletions(-)
+rename tmp_mv.md =&gt; tmp_mv_2.md (100%)
+</code></pre>
+<p><img alt="Registre de Commit mogut" src="../../../../imatges/CommitMogut.png" /></p>
+</li>
+</ol>
+<h2 id="desfent-canvis-entre-la-zona-de-preparacio-i-treball">Desfent canvis entre la zona de preparació i treball</h2>
+<ol>
+<li>
+<p><strong>Modifiquem el fitxer tmp_mv_1.md</strong></p>
+<p><code>alumno@alumno-VirtualBox:~/projecte$ echo "Prova per desfer canvis" &gt;&gt; tmp_mv_1.md</code></p>
+</li>
+<li>
+<p><strong>Consultem l'estat del SCV</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+Cambios no rastreados para el commit:
+(usa "git add &lt;archivo&gt;..." para actualizar lo que será confirmado)
+(usa "git restore &lt;archivo&gt;..." para descartar los cambios en el directorio de trabajo)
+    modificados:     tmp_mv_1.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+</code></pre>
+</li>
+<li>
+<p><strong>Desfem els canvis</strong></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git restore tmp_mv_1.md
+alumno@alumno-VirtualBox:~/projecte$ git status
+En la rama master
+nada para hacer commit, el árbol de trabajo está limpio
+</code></pre>
+</li>
+</ol>
+<h2 id="altres-operacions-dinteres">Altres operacions d’interès</h2>
+<h3 id="ignorant-fitxers-en-git-el-fitxer-gitignore">Ignorant fitxers en git. El fitxer .gitignore</h3>
+<p>El fitxer .gitignore serveix per a especificar patrons de noms d'arxius que no volem guardar en el repositori. Aquest fitxer té que estar en l'arrel del directori de treball.</p>
+<p>Regles:</p>
+<ul>
+<li>Cada línia contindrà un patró.</li>
+<li>S’admeten línies en blanc com a separador per millorar la llegibilitat.</li>
+<li>Els comentaris comencen amb #.</li>
+<li>El prefix ! nega el patró (farà que sí incloguen a git els arxius indicats).</li>
+<li>Podem utilitzar el comodí * per indicar qualsevol cadena de caràcters.</li>
+<li>Podem utilitzar la interrogació (?) per reemplaçar un caràcter qualsevol.</li>
+<li>Podem utilitzar expressions regulars tipus [0-9], [ao].</li>
+</ul>
+<p>Exemple:</p>
+<pre><code class="language-gitignore"># Ignorar els fitxers amb nom temporal_6.txt i temporal_7.zip
+temporal_6.txt
+temporal_7.zip
+
+# Ignorar els fitxers amb extensió zip, gz, changes o deb:
+*.zip
+*.gz
+*.changes
+*.deb
+
+# Ignorar els fitxers amb extensió .log de la carpeta log, així
+# com les extensions .log0, .log1, log2...
+log/*.log
+log/*.log[0-9]
+
+# Ignorar tots els fitxers del directori imatges
+imatges/*
+
+# Ignorar tots els fitxers que acaben en 'a' o 'o' de la 
+# carpeta compilats
+compilats/*[ao]
+</code></pre>
+<h3 id="revertir-a-lestat-dun-commit">Revertir a l’estat d’un commit</h3>
+<ol>
+<li>
+<p>Estat actual:</p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git log --oneline
+76460f9 (HEAD -&gt; master) Prova d'exercici 3 Tema 5 EDD
+03c9521 Afegit .gitignore
+701a924 Reanomenat tmp_mv.md a tmp_mv_2.md
+f98f9de Afegit tmp_mv.md per al seu segon reanomenat
+f7db25b Reanomenat tmp_mv.md a tmp_mv_1.md
+d6a1f47 creat tmp.md
+61d8d06 Eliminat tmp2.md
+5e44cc0 Eliminat tmp1.md
+48d89fc Afegint dos fitxers de prova
+88183fb Modificat fitxer1.md amb -a
+2c31c0d Modificat fitxer1.md sense funcio -a
+03b113b Afegint el primer commit
+</code></pre>
+</li>
+<li>
+<p>Revertir el commit: Us del codi <code>$ git revert</code></p>
+<pre><code>alumno@alumno-VirtualBox:~/projecte$ git log --oneline
+e815ef3 (HEAD -&gt; master) Revert "Eliminat tmp1.md"
+76460f9 Prova d'exercici 3 Tema 5 EDD
+03c9521 Afegit .gitignore
+701a924 Reanomenat tmp_mv.md a tmp_mv_2.md
+f98f9de Afegit tmp_mv.md per al seu segon reanomenat
+f7db25b Reanomenat tmp_mv.md a tmp_mv_1.md
+d6a1f47 creat tmp.md
+61d8d06 Eliminat tmp2.md
+5e44cc0 Eliminat tmp1.md
+48d89fc Afegint dos fitxers de prova
+88183fb Modificat fitxer1.md amb -a
+2c31c0d Modificat fitxer1.md sense funcio -a
+03b113b Afegint el primer commit
+</code></pre>
+</li>
+</ol>
+<h3 id="eliminant-arxius-no-seguits">Eliminant arxius no seguits</h3>
+<p>L'order <code>$ git clean -f</code> elimina arxius que no estiguen en el control de version encara.</p>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ git status
+    En la rama master
+    Archivos sin seguimiento:
+    (usa "git add &lt;archivo&gt;..." para incluirlo a lo que será confirmado)
+        .fitxer1.md.swo
+        f1
+        f2
+        f3
+
+    no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+    alumno@alumno-VirtualBox:~/projecte$ git clean -f
+    Borrando .fitxer1.md.swo
+    Borrando f1
+    Borrando f2
+    Borrando f3
+    alumno@alumno-VirtualBox:~/projecte$ git status
+    En la rama master
+    nada para hacer commit, el árbol de trabajo está limpio
+</code></pre>
+<p>Però per a eliminar directoris, tindrem que afegir -d a l'ordre.</p>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ mkdir dir1 dir2
+    alumno@alumno-VirtualBox:~/projecte$ git clean -f -d
+    Borrando dir1/
+    Borrando dir2/
+</code></pre>
+<h2 id="exercici">Exercici</h2>
+<h3 id="git-log">git log</h3>
+<pre><code>    alumno@alumno-VirtualBox:~/projecte$ git log
+    commit e815ef3449cdd83b9c2b5a5a27615fa2bf375fad (HEAD -&gt; master)
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Sun Dec 8 16:54:56 2024 +0100
+
+        Revert "Eliminat tmp1.md"
+
+        This reverts commit 5e44cc039c4609cbabaf23ac4c5fef16f1ac3c88.
+
+        Revert "esborrat tmp1"
+
+    commit 76460f9936d5e0e9b94db0bffd287e3963765ba3
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Sun Dec 8 16:47:34 2024 +0100
+
+        Prova d'exercici 3 Tema 5 EDD
+
+    commit 03c9521577d2c9b7f2fc51c6f62a7902dcfa763d
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 21:05:03 2024 +0100
+
+        Afegit .gitignore
+
+    commit 701a924ef8aeb4981065700f153682257da8667a
+    :...skipping...
+    commit e815ef3449cdd83b9c2b5a5a27615fa2bf375fad (HEAD -&gt; master)
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Sun Dec 8 16:54:56 2024 +0100
+
+        Revert "Eliminat tmp1.md"
+
+        This reverts commit 5e44cc039c4609cbabaf23ac4c5fef16f1ac3c88.
+
+        Revert "esborrat tmp1"
+
+    commit 76460f9936d5e0e9b94db0bffd287e3963765ba3
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Sun Dec 8 16:47:34 2024 +0100
+
+        Prova d'exercici 3 Tema 5 EDD
+
+    commit 03c9521577d2c9b7f2fc51c6f62a7902dcfa763d
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 21:05:03 2024 +0100
+
+        Afegit .gitignore
+
+    commit 701a924ef8aeb4981065700f153682257da8667a
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 13:48:03 2024 +0100
+
+        Reanomenat tmp_mv.md a tmp_mv_2.md
+
+    commit f98f9dea30fc76ee8c5d9855fbf18b20dac39231
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 13:41:31 2024 +0100
+
+        Afegit tmp_mv.md per al seu segon reanomenat
+
+    commit f7db25be6e6f810108f84e2a07714dae1e209529
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    ...skipping...
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Sun Dec 8 16:54:56 2024 +0100
+
+        Revert "Eliminat tmp1.md"
+
+        This reverts commit 5e44cc039c4609cbabaf23ac4c5fef16f1ac3c88.
+
+        Revert "esborrat tmp1"
+
+    commit 76460f9936d5e0e9b94db0bffd287e3963765ba3
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Sun Dec 8 16:47:34 2024 +0100
+
+        Prova d'exercici 3 Tema 5 EDD
+
+    commit 03c9521577d2c9b7f2fc51c6f62a7902dcfa763d
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 21:05:03 2024 +0100
+
+        Afegit .gitignore
+
+    commit 701a924ef8aeb4981065700f153682257da8667a
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 13:48:03 2024 +0100
+
+        Reanomenat tmp_mv.md a tmp_mv_2.md
+
+    commit f98f9dea30fc76ee8c5d9855fbf18b20dac39231
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 13:41:31 2024 +0100
+
+        Afegit tmp_mv.md per al seu segon reanomenat
+
+    commit f7db25be6e6f810108f84e2a07714dae1e209529
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 13:36:02 2024 +0100
+
+        Reanomenat tmp_mv.md a tmp_mv_1.md
+
+    commit d6a1f4798b5fd5734cbe588945d8785c4feda4f3
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 13:16:58 2024 +0100
+
+        creat tmp.md
+
+    commit 61d8d06b8735d782f5653dbeec0db907bc7c6878
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 12:49:00 2024 +0100
+
+        Eliminat tmp2.md
+
+    commit 5e44cc039c4609cbabaf23ac4c5fef16f1ac3c88
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 12:38:59 2024 +0100
+
+        Eliminat tmp1.md
+
+    commit 48d89fc7c215b2ec55cd0cb0b2f0ec822b505801
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Mon Nov 11 09:50:42 2024 +0100
+
+        Afegint dos fitxers de prova
+
+    commit 88183fbbeaf853a0effcd6708fcbf2aad290a1a9
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Tue Oct 29 12:08:16 2024 +0100
+
+        Modificat fitxer1.md amb -a
+
+    commit 2c31c0d60c0330b2e05b2d873700f036b3fae3a3
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Tue Oct 29 11:58:00 2024 +0100
+
+        Modificat fitxer1.md sense funcio -a
+
+    commit 03b113bc8558079752319467be406222bbabd4e0
+    Author: Jonathan Signes &lt;jonsigfal@alu.edu.gva.es&gt;
+    Date:   Tue Oct 29 09:43:59 2024 +0100
+
+        Afegint el primer commit
+</code></pre>
+<h3 id="captura-de-pantalla-de-git-log-oneline">Captura de pantalla de git log --oneline</h3>
+<p><img alt="Últim git log --oneline" src="../../../../imatges/gitLogFinal.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+</main>
+<footer class="custom-footer">
+    <p>&copy; 2024 La Meua Documentació</p>
+</footer>
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
