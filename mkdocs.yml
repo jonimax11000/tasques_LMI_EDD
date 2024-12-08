@@ -1,0 +1,33 @@
+site_name: 'Documentació de les tasques: Jonathan David Signes Falcó'
+
+theme:
+  name: 'material'
+  custom_dir: 'docs/overrides'
+extra_css:
+  - 'overrides/extra.css'
+
+nav:
+  - Inici: index.md
+  - Exercicis EDD:
+    - Tema 1:
+      - Llenguatges de programació més utilitzats: edd/Tema1/document_1.md
+      - Com plantejaria el desenvolupament d'una app.: edd/Tema1/document_2.md
+      - Exemples de traducció. Les ordres python3, cc, java i javac.: edd/Tema1/document_3.md
+      - L'efecte Bola de neu.: edd/Tema1/document_4.md
+      - La web d'una empresa: edd/Tema1/document_5.md
+      - Conflicte d'interesos: edd/Tema1/document_6.md
+    - Tema 3:
+      - Apartat 2:
+        - Activitat 1. Desenvolupament col·laboratiu: edd/Tema3/Punt2/ex1.md
+        - Activitat 2. Control de versions i model iteratiu: edd/Tema3/Punt2/ex2.md
+        - Activitat 3: edd/Tema3/Punt2/ex3.md
+      - Apartat 5:
+        - Intalació Git: edd/Tema3/Punt5/instalacioGIT.md
+        - Començant a treballar amb repositoris: edd/Tema3/Punt5/treballantRepositoris.md
+        - Git i Visual Studio Code: edd/Tema3/Punt5/VSCode_GIT.md
+        - Exercici 1: edd/Tema3/Punt5/exercici1.md
+        - Exercici 2: edd/Tema3/Punt5/exercici2.md
+        - Exercici 3: edd/Tema3/Punt5/exercici3.md
+  - Articles LMI:
+    - Característiques dels llenguatges de marques: lmi/document_1.md
+    - Identificació dels espais de noms en documents (AndroidManifest.xml).: lmi/document_2.md
