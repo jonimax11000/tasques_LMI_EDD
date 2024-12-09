@@ -29,8 +29,8 @@ nav:
         - Exercici 2: edd/Tema3/Punt5/exercici2.md
         - Exercici 3: edd/Tema3/Punt5/exercici3.md
     - Tema 4:
-      - Calculadora.java: edd/Tema4/Calculadora.md
-      - Calculadora.java: /edd/Tema4/Calculadora.md
+      - Calculadora amb Ant: edd/Tema4/CalculadoraAnt.md
+      - Maven: edd/Tema4/Maven.md
   - Articles LMI:
     - Característiques dels llenguatges de marques: lmi/document_1.md
     - Identificació dels espais de noms en documents (AndroidManifest.xml).: lmi/document_2.md

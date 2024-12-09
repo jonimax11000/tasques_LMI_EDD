@@ -1,4 +1,4 @@
-# Calculadora con Ant
+# Calculadora amb Ant
 
 ## Calculadora.java
 
