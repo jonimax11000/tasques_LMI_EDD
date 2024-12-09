@@ -851,6 +851,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#posem-el-codi-de-la-calculadora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posem el codi de la Calculadora
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#compilar-el-projecte" class="md-nav__link">
     <span class="md-ellipsis">
       Compilar el projecte
@@ -881,6 +890,15 @@
   <a href="#empaquetat" class="md-nav__link">
     <span class="md-ellipsis">
       Empaquetat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empaquetat-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empaquetat 2
     </span>
   </a>
   
@@ -1036,6 +1054,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#posem-el-codi-de-la-calculadora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Posem el codi de la Calculadora
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#compilar-el-projecte" class="md-nav__link">
     <span class="md-ellipsis">
       Compilar el projecte
@@ -1071,6 +1098,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#empaquetat-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empaquetat 2
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1101,31 +1137,120 @@
 
 <h1 id="maven">Maven</h1>
 <h2 id="configura-el-projecte-correctament-des-de-la-linia-dordres-partint-del-larquetip-quickstart">Configura el projecte correctament des de la línia d'ordres, partint del l'arquetip quickstart</h2>
-<pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick$ mvn archetype:generate -DgroupId=com.jonathan.edd -DartifactId=calculadoraMaven -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+<pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick$ mvn archetype:generate -DgroupId=com.falco.signes.jonathan -DartifactId=calculadoraMaven -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------&lt; org.apache.maven:standalone-pom &gt;-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] &gt;&gt;&gt; maven-archetype-plugin:3.3.1:generate (default-cli) &gt; generate-sources @ standalone-pom &gt;&gt;&gt;
+[INFO] 
+[INFO] &lt;&lt;&lt; maven-archetype-plugin:3.3.1:generate (default-cli) &lt; generate-sources @ standalone-pom &lt;&lt;&lt;
+[INFO] 
+[INFO] 
+[INFO] --- maven-archetype-plugin:3.3.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: maven-archetype-quickstart:1.5
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.falco.signes.jonathan
+[INFO] Parameter: artifactId, Value: calculadoraMaven
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.falco.signes.jonathan
+[INFO] Parameter: packageInPathFormat, Value: com/falco/signes/jonathan
+[INFO] Parameter: junitVersion, Value: 5.11.0
+[INFO] Parameter: package, Value: com.falco.signes.jonathan
+[INFO] Parameter: groupId, Value: com.falco.signes.jonathan
+[INFO] Parameter: artifactId, Value: calculadoraMaven
+[INFO] Parameter: javaCompilerVersion, Value: 17
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[WARNING] Don't override file /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/src/main/java/com/falco/signes/jonathan
+[WARNING] Don't override file /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/src/test/java/com/falco/signes/jonathan
+[WARNING] CP Don't override file /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/.mvn
+[INFO] Project created from Archetype in dir: /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.701 s
+[INFO] Finished at: 2024-12-09T09:01:01+01:00
+[INFO] ------------------------------------------------------------------------
 </code></pre>
-<pre><code class="language-bash">calculadoraMaven/
-├── pom.xml
-└── src
-    ├── main
-    │   └── java
-    │       └── com
-    │           └── jonathan
-    │               └── edd
-    │                   └── App.java
-    └── test
-        └── java
+<pre><code class="language-bash">calculadoraMaven
+    ├── pom.xml
+    ├── src
+    │   ├── main
+    │   │   └── java
+    │   │       └── com
+    │   │           └── falco
+    │   │               └── signes
+    │   │                   └── jonathan
+    │   │                       └── App.java
+    │   └── test
+    │       └── java
+    │           └── com
+    │               └── falco
+    │                   └── signes
+    │                       └── jonathan
+    │                           └── AppTest.java
+    └── target
+        ├── classes
+        │   └── com
+        │       └── falco
+        │           └── signes
+        │               └── jonathan
+        │                   └── App.class
+        └── test-classes
             └── com
-                └── jonathan
-                    └── edd
-                        └── AppTest.java
+                └── falco
+                    └── signes
+                        └── jonathan
+                            └── AppTest.class
 
-12 directories, 3 files
+26 directories, 5 files
+
+</code></pre>
+<h3 id="posem-el-codi-de-la-calculadora">Posem el codi de la Calculadora</h3>
+<pre><code class="language-bash">calculadoraMaven
+    ├── pom.xml
+    ├── src
+    │   ├── main
+    │   │   └── java
+    │   │       └── com
+    │   │           └── falco
+    │   │               └── signes
+    │   │                   └── jonathan
+    │   │                       ├── Calculadora.java
+    │   │                       └── Calcula.java
+    │   └── test
+    │       └── java
+    │           └── com
+    │               └── falco
+    │                   └── signes
+    │                       └── jonathan
+    │                           └── AppTest.java
+    └── target
+        ├── classes
+        │   └── com
+        │       └── falco
+        │           └── signes
+        │               └── jonathan
+        │                   ├── Calcula.class
+        │                   └── Calculadora.class
+        └── test-classes
+            └── com
+                └── falco
+                    └── signes
+                        └── jonathan
+                            └── AppTest.class
+
+26 directories, 7 files
 </code></pre>
 <h3 id="compilar-el-projecte">Compilar el projecte</h3>
 <pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ mvn compile
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] -----------------&lt; com.jonathan.edd:calculadoraMaven &gt;------------------
+[INFO] -------------&lt; com.falco.signes.jonathan:calculadoraMaven &gt;-------------
 [INFO] Building calculadoraMaven 1.0-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
@@ -1133,47 +1258,50 @@
 [INFO] skip non existing resourceDirectory /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ calculadoraMaven ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 2 source files with javac [debug release 17] to target/classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.323 s
-[INFO] Finished at: 2024-12-09T02:16:26+01:00
+[INFO] Total time:  0.635 s
+[INFO] Finished at: 2024-12-09T09:18:00+01:00
 [INFO] ------------------------------------------------------------------------
 </code></pre>
-<pre><code class="language-bash">calculadoraMaven/
-├── pom.xml
-├── src
-│   ├── main
-│   │   └── java
-│   │       └── com
-│   │           └── jonathan
-│   │               └── edd
-│   │                   └── App.java
-│   └── test
-│       └── java
-│           └── com
-│               └── jonathan
-│                   └── edd
-│                       └── AppTest.java
-└── target
+<pre><code class="language-bash">target
     ├── classes
     │   └── com
-    │       └── jonathan
-    │           └── edd
-    │               └── App.class
+    │       └── falco
+    │           └── signes
+    │               └── jonathan
+    │                   ├── Calcula.class
+    │                   └── Calculadora.class
     ├── generated-sources
     │   └── annotations
-    └── maven-status
-        └── maven-compiler-plugin
-            └── compile
-                └── default-compile
-                    ├── createdFiles.lst
-                    └── inputFiles.lst
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       └── compile
+    │           └── default-compile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    └── test-classes
+        └── com
+            └── falco
+                └── signes
+                    └── jonathan
+                        └── AppTest.class
+
 </code></pre>
 <h3 id="execucio">Execució</h3>
-<pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ java -cp target/classes com.jonathan.edd.App
-Hello World!
+<pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ java -cp target/classes com.falco.signes.jonathan.Calcula
+Bienvenidos a una calculadora básica
+Que quieres hacer? ('s','r','m','d')
+m
+Cual es el primer número? (entero)
+2
+Cual es el segundo número? (entero)
+3
+6
+
 </code></pre>
 <h3 id="netetja-del-projecte">Netetja del projecte</h3>
 <pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ mvn clean
@@ -1198,34 +1326,45 @@ Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
 [INFO] Finished at: 2024-12-09T02:21:37+01:00
 [INFO] ------------------------------------------------------------------------
 </code></pre>
-<pre><code class="language-bash">/calculadoraMaven/
-├── pom.xml
-└── src
-    ├── main
-    │   └── java
-    │       └── com
-    │           └── jonathan
-    │               └── edd
-    │                   └── App.java
-    └── test
-        └── java
-            └── com
-                └── jonathan
-                    └── edd
-                        └── AppTest.java
+<pre><code class="language-bash">/calculadoraMaven
+    ├── pom.xml
+    └── src
+        ├── main
+        │   └── java
+        │       └── com
+        │           └── falco
+        │               └── signes
+        │                   └── jonathan
+        │                       ├── Calculadora.java
+        │                       └── Calcula.java
+        └── test
+            └── java
+                └── com
+                    └── falco
+                        └── signes
+                            └── jonathan
+                                └── AppTest.java
+
 </code></pre>
 <h3 id="empaquetat">Empaquetat</h3>
 <ol>
 <li>
 <p><strong>Creació del JAR:</strong></p>
-<pre><code>jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ mvn package
+<pre><code>jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ mvn package 
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] -----------------&lt; com.jonathan.edd:calculadoraMaven &gt;------------------
+[INFO] -------------&lt; com.falco.signes.jonathan:calculadoraMaven &gt;-------------
 [INFO] Building calculadoraMaven 1.0-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ calculadoraMaven ---
+[INFO] skip non existing resourceDirectory /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ calculadoraMaven ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ calculadoraMaven ---
 
 /calculadoraMaven/
 ├── pom.xml
@@ -1233,22 +1372,27 @@ Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
 │   ├── main
 │   │   └── java
 │   │       └── com
-│   │           └── jonathan
-│   │               └── edd
-│   │                   └── App.java
+│   │           └── falco
+│   │               └── signes
+│   │                   └── jonathan
+│   │                       ├── Calculadora.java
+│   │                       └── Calcula.java
 │   └── test
 │       └── java
 │           └── com
-│               └── jonathan
-│                   └── edd
-│                       └── AppTest.java
+│               └── falco
+│                   └── signes
+│                       └── jonathan
+│                           └── AppTest.java
 └── target
     ├── calculadoraMaven-1.0-SNAPSHOT.jar
     ├── classes
     │   └── com
-    │       └── jonathan
-    │           └── edd
-    │               └── App.class
+    │       └── falco
+    │           └── signes
+    │               └── jonathan
+    │                   ├── Calcula.class
+    │                   └── Calculadora.class
     ├── generated-sources
     │   └── annotations
     ├── generated-test-sources
@@ -1266,21 +1410,44 @@ Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
     │               ├── createdFiles.lst
     │               └── inputFiles.lst
     ├── surefire-reports
-    │   ├── com.jonathan.edd.AppTest.txt
-    │   └── TEST-com.jonathan.edd.AppTest.xml
+    │   ├── com.falco.signes.jonathan.AppTest.txt
+    │   └── TEST-com.falco.signes.jonathan.AppTest.xml
     └── test-classes
         └── com
-            └── jonathan
-                └── edd
-                    └── AppTest.class
+            └── falco
+                └── signes
+                    └── jonathan
+                        └── AppTest.class
 </code></pre>
 </li>
 <li>
 <p><strong>Executant el JAR:</strong></p>
 </li>
 </ol>
-<pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ java -cp target/calculadoraMaven-1.0-SNAPSHOT.jar com.jonathan.edd.App
-Hello World!
+<pre><code class="language-bash">jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ java -cp target/calculadoraMaven-1.0-SNAPSHOT.jar com.falco.signes.jonathan.Calcula
+Bienvenidos a una calculadora básica
+Que quieres hacer? ('s','r','m','d')
+d
+Cual es el primer número? (entero)
+4
+Cual es el segundo número? (entero)
+2
+2
+</code></pre>
+<h3 id="empaquetat-2">Empaquetat 2</h3>
+<p>Primer modifiquem el pom.xml per a indicar la clase principal de l'aplicació.</p>
+<pre><code class="language-bash">&lt;plugin&gt;
+          &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+          &lt;version&gt;3.4.2&lt;/version&gt;
+          &lt;configuration&gt;
+            &lt;archive&gt;
+              &lt;manifest&gt;
+                &lt;addClasspath&gt;true&lt;/addClasspath&gt;
+                &lt;mainClass&gt;com.falco.signes.jonathan.Calcula&lt;/mainClass&gt;
+              &lt;/manifest&gt;
+            &lt;/archive&gt;
+          &lt;/configuration&gt;
+        &lt;/plugin&gt;
 </code></pre>
 
 
