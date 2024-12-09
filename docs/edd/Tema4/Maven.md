@@ -337,3 +337,104 @@ Primer modifiquem el pom.xml per a indicar la clase principal de l'aplicació.
           </configuration>
         </plugin>
 ```
+
+Generem nou JAR.
+
+```bash
+jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.falco.signes.jonathan:calculadoraMaven >-------------
+[INFO] Building calculadoraMaven 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.4.0:clean (default-clean) @ calculadoraMaven ---
+[INFO] Deleting /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ calculadoraMaven ---
+[INFO] skip non existing resourceDirectory /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ calculadoraMaven ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ calculadoraMaven ---
+[INFO] skip non existing resourceDirectory /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ calculadoraMaven ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ calculadoraMaven ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.falco.signes.jonathan.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in com.falco.signes.jonathan.AppTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ calculadoraMaven ---
+[INFO] Building jar: /home/jonimax11000/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven/target/calculadoraMaven-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.252 s
+[INFO] Finished at: 2024-12-09T12:38:27+01:00
+[INFO] ------------------------------------------------------------------------
+```
+
+Executem:
+
+```bash
+jonimax11000@jonimax11000:~/Desktop/DAM/Primero/EDD/Tema4/MavenQick/calculadoraMaven$ java -jar target/calculadoraMaven-1.0-SNAPSHOT.jar 
+Bienvenidos a una calculadora básica
+Que quieres hacer? ('s','r','m','d')
+r
+Cual es el primer número? (entero)
+8
+Cual es el segundo número? (entero)
+6
+2
+```
+
+## Genera el projecte correctament des de VSCde
+
+1. En la carpeta que volem iniciar el projecte, obrim el desplegable de Maven.
+2. Creem un projecte nou polsant en new project...
+3. En les opcions desplegades seleccionarem el arquetip de quickstart.
+4. Indiquem que el projecte està en la versió 1.0, que el grupId es com.falco.signes.jonathan i el nom del projecte com calculadora2.
+5. Deixem el valor predeterminat 1.0-SNAPSHOT, i polsem Intro per a crear el projecte.
+
+    ![Projecte VSCde Manven quickstart](../../imatges/MavenQick.png)
+
+    ![Update Maven Archetype Catalog](../../imatges/ArchetypeVSCode.png)
+
+6. Posem el code de la calculadora.
+7. Ara ja podemo compillar, empaquetar, netetjar, ejecutar,etc. Tot amb un parell de clicks.
+
+    ![Comandos de Maven en VSCde](../../imatges/VSCodecomandosMaven.png)
+
+## Netbeans
+
+1. Polsar **Archivo --> Nuevo proyecto**.
+2. Asistent del nou projecte.
+    1. Categories: Seleccionem *Java with Maven*.
+    2. Projects: Seleccionem *Proyect with Archetype*.
+    3. Pulsamos *Next*.
+3. En la llista de arquetipes hem buscat: "maven-archetype-quickstart", com hi han varios, he elegit el de la versió 1.5, com en el punt de comands
+4. Name and Location:
+    1. Elegim el nom del projecte: calculadoreNetbeans.
+    2. Elegim la carpeta on s'alojarà el projecte: no relevant.
+    3. Group Id: com.falco.signes.jonathan
+    4. Version: 1.0-SNAPSHOT.
+    5. Package: com.falco.signes.jonathan.calculadora2
+5. Finalitzem.
+6. Posem la Calculadora.java i Calcula.java en el projecte
+
+    ![Maven amb Netbeans](../../imatges/NetbeansMaven.png)
